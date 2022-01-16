@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ussdmobile.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/bannerFragment"
+        android:name="com.example.ussdmobile.fragments.BannerFragment"
+        android:label="fragment_banner"
+        tools:layout="@layout/fragment_banner" />
+    <fragment
+        android:id="@+id/definitionFragment"
+        android:name="com.example.ussdmobile.fragments.DefinitionFragment"
+        android:label="fragment_definition"
+        tools:layout="@layout/fragment_definition" />
+    <fragment
+        android:id="@+id/internetFragment"
+        android:name="com.example.ussdmobile.fragments.InternetFragment"
+        android:label="fragment_internet"
+        tools:layout="@layout/fragment_internet" />
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="com.example.ussdmobile.fragments.SmsFragment"
+        android:label="fragment_sms"
+        tools:layout="@layout/fragment_sms" />
+    <fragment
+        android:id="@+id/ussdFragment"
+        android:name="com.example.ussdmobile.fragments.UssdFragment"
+        android:label="fragment_ussd"
+        tools:layout="@layout/fragment_ussd" />
+    <fragment
+        android:id="@+id/servicesFragment"
+        android:name="com.example.ussdmobile.fragments.ServicesFragment"
+        android:label="ServicesFragment" />
+</navigation>

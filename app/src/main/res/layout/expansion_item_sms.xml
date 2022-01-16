@@ -1,0 +1,124 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.github.florent37.expansionpanel.ExpansionHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:expansion_headerIndicator="@id/header_indicator"
+            app:expansion_layout="@id/expansion_layout"
+            app:expansion_toggleOnClick="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:padding="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_weight="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageExp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_ellipse_2"
+                        android:scaleType="center"
+                        android:src="@drawable/ic__0" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textExpName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="@string/expansion_text"
+                        android:textColor="#2E2E2E"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:maxLines="3"
+                        android:id="@+id/textExpName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/rubik"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="@string/expansion_text"
+                        android:textColor="#2E2E2E"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/header_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
+                        app:tint="@color/black" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+        <com.github.florent37.expansionpanel.ExpansionLayout
+            android:id="@+id/expansion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:expansion_expanded="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/textExpDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Salom" />
+            </LinearLayout>
+        </com.github.florent37.expansionpanel.ExpansionLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
